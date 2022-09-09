@@ -1,3 +1,52 @@
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+            to bottom,
+            black,
+            rgba(255, 0, 0, 0)
+    );
+    z-index: 3;
+}
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.left a span {
+    margin-left: 25px;
+    color: #b4a895;
+    font-weight: 800;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.navBar {
 
 }

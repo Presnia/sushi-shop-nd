@@ -1,0 +1,25 @@
+.nav-link {
+    margin-left: 1.5rem;
+}
+
+.nav-link a {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-link a span {
+    font-size: .7rem;
+    font-weight: 500;
+    margin-left: 0.3rem;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav-link a i svg {
+    width: 18px;
+    height: 18px;
+    stroke: #b4a895;
+}
