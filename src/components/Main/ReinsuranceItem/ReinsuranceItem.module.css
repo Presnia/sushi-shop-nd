@@ -1,0 +1,32 @@
+.reinsuranceItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 275px;
+    height: 100px;
+    color: #b4a895;
+    text-align: center;
+}
+
+.knives-rendered {
+    height: 64px;
+    width: 64px;
+}
+
+.iconsWrapper {
+
+}
+
+.reinsuranceDescription {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reinsuranceDescription .extra {
+
+}
+
+.descr {
+    line-height: 1.5;
+}

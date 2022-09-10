@@ -1,0 +1,15 @@
+.stars-rendered {
+    height: 64px;
+    width: 64px;
+    background: url(../../assets/sprite-stars-64.png) 0 0;
+}
+
+.stars-rendered:hover {
+    animation: play 1.5s steps(21) infinite;
+}
+
+@keyframes play {
+    100% {
+        background-position: -2688px;
+    }
+}

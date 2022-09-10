@@ -1,6 +1,8 @@
 import React from 'react';
-import s from './Main.module.css';
 import DeliveryWidget from "./DeliveryWidget/DeliveryWidget";
+import ReinsuranceWidget from "./ReinsuranceWidget/ReinsuranceWidget";
+
+import s from './Main.module.css';
 
 const Main = () => {
     return (
@@ -15,6 +17,7 @@ const Main = () => {
                         </div>
                         <DeliveryWidget />
                     </section>
+                    <ReinsuranceWidget />
                 </div>
             </div>
         </main>
