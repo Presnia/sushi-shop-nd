@@ -16,6 +16,13 @@ const Navbar = () => {
                     />
                 )
             }
+            <li className="btn-menu">
+                <button className="burger">
+                    <span className="bar-top"></span>
+                    <span className="bar-middle"></span>
+                    <span className="bar-bottom"></span>
+                </button>
+            </li>
         </nav>
     );
 };
