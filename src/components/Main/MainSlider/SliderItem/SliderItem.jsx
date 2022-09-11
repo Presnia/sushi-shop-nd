@@ -4,7 +4,7 @@ import s from './SliderItem.module.css';
 
 const SliderItem = ({ href, src, theme, title }) => {
     return (
-        <div className={s.slideItem}>
+        <li className={s.slideItem}>
             <div className={s.newsBlock}>
                 <a href={href} title={title}>
                     <div
@@ -18,7 +18,7 @@ const SliderItem = ({ href, src, theme, title }) => {
                     <span className={s.title}>{title}</span>
                 </a>
             </div>
-        </div>
+        </li>
     );
 };
 
