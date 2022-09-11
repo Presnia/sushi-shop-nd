@@ -12,7 +12,7 @@ const BannerWidget = () => {
                 <div className={s.bannerImageContainer}>
                     <img src={bannerImage} alt="banner"/>
                     <div className={s.bannerOverlay}>
-                        <h1>Brightening up your sunday!</h1>
+                        <h2>Brightening up your sunday!</h2>
                         <p>On sale on Sundays <br/>
                             {nextSunday()}
                         </p>

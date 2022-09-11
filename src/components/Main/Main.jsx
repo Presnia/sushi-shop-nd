@@ -2,6 +2,7 @@ import React from 'react';
 import ReinsuranceWidget from "./ReinsuranceWidget/ReinsuranceWidget";
 import BannerWidget from "./BannerWidget/BannerWidget";
 import HomeHeader from "./HomeHeader/HomeHeader";
+import NewsWidget from "./NewsWidget/NewsWidget";
 
 import s from './Main.module.css';
 
@@ -14,6 +15,7 @@ const Main = () => {
                         <HomeHeader />
                         <ReinsuranceWidget />
                         <BannerWidget />
+                        <NewsWidget />
                     </div>
                 </div>
             </div>
