@@ -1,0 +1,65 @@
+.widgetInstance {
+    width: 100%;
+    height: 100%;
+}
+
+.bannerWidget{
+    min-height: 405px;
+}
+
+.bannerImageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.bannerImageContainer img {
+    width: auto;
+    height: 405px;
+    margin: auto;
+}
+
+.bannerOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 7;
+}
+
+.bannerOverlay a {
+    text-decoration: none;
+}
+
+.bannerOverlay h1 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    color: #52c5ae;
+}
+
+.bannerOverlay p {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bannerOverlay a button {
+    margin-top: 30px;
+    padding: 8px 30px;
+    background-color: #52c5ae;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .08rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
-import DeliveryWidget from "./DeliveryWidget/DeliveryWidget";
 import ReinsuranceWidget from "./ReinsuranceWidget/ReinsuranceWidget";
+import BannerWidget from "./BannerWidget/BannerWidget";
+import HomeHeader from "./HomeHeader/HomeHeader";
 
 import s from './Main.module.css';
 
@@ -9,15 +10,11 @@ const Main = () => {
         <main className={s.main}>
             <div className={s.pageHome}>
                 <div className={`home ${s.home}`}>
-                    <section className={s.homeHeader}>
-                        <div className={s.media}>
-                            <video className='IIV' autoPlay loop muted playsInline>
-                                <source src="https://www.mysushishop.co.uk/en/USER/video/exports/video_marque_2019.1080p.standard.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <DeliveryWidget />
-                    </section>
-                    <ReinsuranceWidget />
+                    <div className={s.widgetsLayout}>
+                        <HomeHeader />
+                        <ReinsuranceWidget />
+                        <BannerWidget />
+                    </div>
                 </div>
             </div>
         </main>

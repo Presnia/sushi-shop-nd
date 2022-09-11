@@ -60,3 +60,18 @@ export const ReinsuranceItems = [
         extra: <Star style={{strokeWidth: '1', width: '18px', height: '18px'}}/>
     },
 ];
+
+export const nextSunday = () => {
+    const year = new Date().getFullYear();
+    const month = new Date().getMonth();
+
+    const nextWeekend = () => {
+        const today = new Date();
+        const first = today.getDate() - today.getDay() + 1;
+        const last = first + 6;
+
+        return new Date(today.setDate(last)).getDate();
+    }
+
+    return `to take away and delivery until ${nextWeekend()}/${month + 1}/${year}`;
+}
