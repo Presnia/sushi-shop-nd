@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
+import MainSlider from "../MainSlider/MainSlider";
+import { ChevronLeft, ChevronRight } from "react-feather";
 
 import s from './NewsWidget.module.css';
-import MainSlider from "../MainSlider/MainSlider";
 
 const NewsWidget = () => {
     const swiperNavPrevRef = useRef(null);
@@ -17,9 +18,20 @@ const NewsWidget = () => {
                         </h2>
                     </div>
                     <div className={s.sliderNav}>
-                        <div className={s.sliderControls}></div>
+                        <button className={s.prev} ref={swiperNavPrevRef}>
+                            <ChevronLeft />
+                        </button>
+                        <button className={s.next} ref={swiperNavNextRef}>
+                            <ChevronRight />
+                        </button>
                     </div>
-                    <MainSlider />
+                    <MainSlider
+                        swiperNavPrevRef={swiperNavPrevRef}
+                        swiperNavNextRef={swiperNavNextRef}
+                    />
+                    <div className={s.bottom}>
+                        <a href="/#news">See all the news</a>
+                    </div>
                 </div>
             </section>
         </div>

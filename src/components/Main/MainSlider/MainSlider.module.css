@@ -1,12 +1,12 @@
-.slider {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*flex-wrap: wrap;*/
-    /*margin: auto;*/
+.swiper {
+    min-height: 450px;
+    margin: 0 5%;
+    --webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
-.swiper .swiper-button-prev {
-    display: none;
+.swiper .wrapper {
+
 }
 
 .swiperSlide {

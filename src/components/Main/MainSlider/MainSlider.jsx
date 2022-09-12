@@ -9,15 +9,27 @@ import 'swiper/css/autoplay';
 
 import s from './MainSlider.module.css';
 
-const MainSlider = () => {
+const MainSlider = ({ swiperNavPrevRef, swiperNavNextRef }) => {
     return (
         <Swiper
-            modules={ [Navigation, Autoplay ]}
-            navigation={true}
-            autoplay={false}
+            modules={ [Navigation, Autoplay]}
+            navigation={{
+                prevEl: swiperNavPrevRef.current,
+                nextEl: swiperNavNextRef.current,
+            }}
+            autoplay={{ delay: 5000 }}
             slidesPerView={3}
+            slidesPerGroup={3}
+            spaceBetween={10}
+            speed={1000}
             loop
             className={s.swiper}
+            onInit={(swiper) => {
+                swiper.params.navigation.prevEl = swiperNavPrevRef.current;
+                swiper.params.navigation.nextEl = swiperNavNextRef.current;
+                swiper.navigation.init();
+                swiper.navigation.update();
+            }}
         >
             {
                 SliderItemsData.map(slider =>
