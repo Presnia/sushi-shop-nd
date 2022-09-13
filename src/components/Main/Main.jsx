@@ -6,6 +6,7 @@ import NewsWidget from "./NewsWidget/NewsWidget";
 import SimpleBannerWidget from "./BannerWidget/SimpleBannerWidget";
 
 import s from './Main.module.css';
+import InstagramWidget from "./InstagramWidget/InstagramWidget";
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
                         <BannerWidget />
                         <NewsWidget />
                         <SimpleBannerWidget />
+                        <InstagramWidget />
                     </div>
                 </div>
             </div>

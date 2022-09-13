@@ -1,0 +1,102 @@
+.widgetInstance {
+
+}
+
+.instagramWidgetContainer {
+    margin: 2% 0 5% 0;
+}
+
+.instagramWidgetHeader {
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    margin: 0 5%;
+}
+
+.widgetHeader {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+
+.widgetHeader svg {
+    stroke: #b4a895;
+    margin-right: 30px;
+    width: 54px;
+    height: 54px;
+}
+
+.widgetHeader a {
+    text-decoration: none;
+    color: #b4a895;
+}
+
+.widgetHeaderTitle {
+    display: flex;
+    width: 100%;
+    font-size: 3.375rem;
+    font-weight: 100;
+    font-family: Helvetica Neue, sans-serif;
+    text-align: center;
+}
+
+.bodyContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.bodyElement {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    --webkit-box-flex: 0;
+    --ms-flex: 0 1 calc(100% - 20px);
+    flex: 0 1 calc(100% - 20px);
+    --webkit-transition: all .5s;
+    transition: all .5s;
+    height: 392px;
+    max-width: 392px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.elementImage {
+    width: 100%;
+    height: 100%;
+}
+
+.elementImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.elementOverlay {
+
+}
+
+.subElement {
+    width: 47.45%;
+    height: 47.47%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.subElement figure {
+    width: 100%;
+    height: 100%;
+}
+
+.subElement figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subElementOverlay {
+
+}

@@ -83,7 +83,7 @@
     cursor: pointer;
 }
 
-.bottom a:after {
+.bottom a:after { 
     position: absolute;
     pointer-events: none;
     content: "";
