@@ -3,6 +3,7 @@ import ReinsuranceWidget from "./ReinsuranceWidget/ReinsuranceWidget";
 import BannerWidget from "./BannerWidget/BannerWidget";
 import HomeHeader from "./HomeHeader/HomeHeader";
 import NewsWidget from "./NewsWidget/NewsWidget";
+import SimpleBannerWidget from "./BannerWidget/SimpleBannerWidget";
 
 import s from './Main.module.css';
 
@@ -16,6 +17,7 @@ const Main = () => {
                         <ReinsuranceWidget />
                         <BannerWidget />
                         <NewsWidget />
+                        <SimpleBannerWidget />
                     </div>
                 </div>
             </div>
